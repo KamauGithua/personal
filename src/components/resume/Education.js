@@ -18,7 +18,7 @@ const Education = () => {
             />
             <ResumeCard
               title="Diploma in Software Engineering"
-              subTitle="Institute of Software Engineering (2023-2024)"
+              subTitle="Institute of Software Technologies (2023-2024)"
               result="Merit"
               desc="Learned software development methodologies, coding languages, and application development. Worked on various projects utilizing modern technologies and frameworks."
             />

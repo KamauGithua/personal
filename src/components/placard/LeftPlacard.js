@@ -24,7 +24,7 @@ const LeftPlacard = () => {
             />
           </h2>
           <p className='text-white'> I am a versatile professional with a background in aeronautical engineering, finance, and full stack development.
-            Currently pursuing a Bachelor of Science in Finance at the Cooperative University of Kenya, I have completed several MERN stack projects
+            Currently pursuing a Bachelor of Science in Finance at the University States International University Africa, I have completed several MERN stack projects
             and have experience working in various roles within the aviation sector.
           </p>
         </div>
