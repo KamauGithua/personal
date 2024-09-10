@@ -21,15 +21,50 @@ const Resume = () => {
       </div>
       <div>
         <ul className='w-full grid grid-cols-4'>
-          <li className='resumeLi'>Education</li>
-          <li className='resumeLi'>Professional Skills</li>
-          <li className='resumeLi'>Experience</li>
-          <li className='resumeLi'>Achievements</li>
+          <li onClick={()=> 
+           setEducationData(true) &
+           setSkillData(false) &
+           setAchievementData(false) &
+           setExperienceData(false)
+
+          } className={`${educationData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}
+          >Education</li>
+
+          <li onClick={()=> 
+           setEducationData(false) &
+           setSkillData(true) &
+           setAchievementData(false) &
+           setExperienceData(false)}
+           className={`${skillData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}>Professional Skills</li>
+          <li onClick={()=> 
+           setEducationData(false) &
+           setSkillData(false) &
+           setAchievementData(false) &
+           setExperienceData(true)} 
+           className={`${experienceData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}
+           >Experience</li>
+          <li onClick={()=> 
+           setEducationData(false) &
+           setSkillData(false) &
+           setAchievementData(true) &
+           setExperienceData(false)}
+           className={`${achievementData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}
+           >Achievements</li>
         </ul>
       </div>
       {
         educationData && <Education />
       }
+      {
+        skillData && <Skills />
+      }
+      {
+        achievementData && <Achievement />
+      }
+      {
+        experienceData && <Experience />
+      }
+      
       {/* <Education /> */}
       {/* <Skills /> */}
       {/* <Achievement /> */}
@@ -43,29 +78,3 @@ const Resume = () => {
 export default Resume
 
 
-// {/* <div>
-// <div className='py-12 font-titleFont'>
-//   <p className='text-sm text-designColor tracking-[4px]'>1998 - 2010</p>
-//   <h2 className='text-4xl font-bold'>Education Quality</h2>
-// </div>
-// <div className='w-1/2 h-[1000px] border-l-[6px] mt-14  border-l-black border-opacity-30 flex flex-col gap-10'>
-//   <ResumeCard
-//     title="Bachelor of Science in Finance"
-//     subTitle="The Cooperative University of Kenya"
-//     result="In Progress"
-//     desc="Currently pursuing coursework in financial analysis, investment strategies, and economic principles. Developing skills in financial modeling, risk management, and strategic planning."
-//   />
-//   <ResumeCard
-//     title="Diploma in Software Engineering"
-//     subTitle="Institute of Software Engineering"
-//     result="Merit"
-//     desc="Learned software development methodologies, coding languages, and application development. Worked on various projects utilizing modern technologies and frameworks."
-//   />
-//   <ResumeCard
-//     title="Diploma in Aeronautical Engineering (Airframes & Engines)"
-//     subTitle="East African School of Aviation"
-//     result="Distinction"
-//     desc="Specialized in the maintenance, repair, and overhaul of aircraft airframes and engines. Gained hands-on experience with various aircraft systems and components."
-//   />
-// </div>
-// </div> */}
