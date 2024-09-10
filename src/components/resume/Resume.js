@@ -7,7 +7,10 @@ import Experience from './Experience';
 import Skills from './Skills';
 
 const Resume = () => {
-    const [educationData, setEducationData]= useState(true)
+    const [educationData, setEducationData]= useState(true);
+    const [skillData, setSkillData]= useState(false);
+    const [experienceData, setExperienceData]= useState(false);
+    const [achievementData, setAchievementData]= useState(false);
   return (
     <section id='resume' className='w-full py-20 border-b-[1px] border-b-black' >
       <div className='flex justify-center items-center text-center'>
@@ -24,8 +27,11 @@ const Resume = () => {
           <li className='resumeLi'>Achievements</li>
         </ul>
       </div>
-      <Education />
-      <Skills />
+      {
+        educationData && <Education />
+      }
+      {/* <Education /> */}
+      {/* <Skills /> */}
       {/* <Achievement /> */}
       {/* <Experience /> */}
 
