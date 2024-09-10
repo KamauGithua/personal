@@ -6,13 +6,13 @@ const Education = () => {
     <div className='w-full flex gap-20'>
         <div>
           <div className='py-12 font-titleFont'>
-            <p className='text-sm text-designColor tracking-[4px]'>2027 - 2018</p>
+            <p className='text-sm text-designColor tracking-[4px]'>2027 - 2019</p>
             <h2 className='text-4xl font-bold'>Education Quality</h2>
           </div>
           <div className='w-full h-[1000px] border-l-[6px] mt-14  border-l-black border-opacity-30 flex flex-col gap-10'>
             <ResumeCard
               title="Bachelor of Science in Finance"
-              subTitle="United States International University Africa (2023-2027)"
+              subTitle="United States International University Africa (2023-2026)"
               result="In Progress"
               desc="Currently pursuing coursework in financial analysis, investment strategies, and economic principles. Developing skills in financial modeling, risk management, and strategic planning."
             />
@@ -24,7 +24,7 @@ const Education = () => {
             />
             <ResumeCard
               title="Diploma in Aeronautical Engineering (Airframes & Engines)"
-              subTitle="East African School of Aviation (2018-2022)"
+              subTitle="East African School of Aviation (2019-2022)"
               result="Distinction"
               desc="Specialized in the maintenance, repair, and overhaul of aircraft airframes and engines. Gained hands-on experience with various aircraft systems and components."
             />

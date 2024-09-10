@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Title from '../layouts/Title'
 // import ResumeCard from './ResumeCard'
 import Education from './Education';
 import Achievement from './Achievement';
 import Experience from './Experience';
-// import Skills from './Skills';
+import Skills from './Skills';
 
 const Resume = () => {
+    const [educationData, setEducationData]= useState(true)
   return (
     <section id='resume' className='w-full py-20 border-b-[1px] border-b-black' >
       <div className='flex justify-center items-center text-center'>
@@ -24,7 +25,7 @@ const Resume = () => {
         </ul>
       </div>
       <Education />
-      {/* <Skills /> */}
+      <Skills />
       {/* <Achievement /> */}
       {/* <Experience /> */}
 

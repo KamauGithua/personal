@@ -14,7 +14,7 @@ const LeftPlacard = () => {
     <div className='w-1/2 flex flex-col gap-20'>
         <div className='flex flex-col gap-6'>
           <h4 className='text-lg font-normal'>Welcome To My World</h4>
-          <h1 className='text-6xl font-bold text-white'>Hi, I'm {" "} <br /> <span className='text-designColor capitalize'>Kamau Githua</span></h1>
+          <h1 className='text-6xl font-bold text-white'>Hi, I'm {" "} <br /> <span className='text-designColor capitalize'>Kamau Leakey</span></h1>
           <h2 className='text-4xl font-bold text-white'>
             a <span>{text}</span>
             <Cursor
